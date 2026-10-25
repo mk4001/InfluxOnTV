@@ -1,0 +1,14 @@
+[Unit]
+Description=InfluxOnTV push relay
+After=network-online.target influxdb.service
+Wants=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/influxontv-push
+ExecStart=/home/pi/influxontv-push/venv/bin/python influxontv_push.py --config config.json
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

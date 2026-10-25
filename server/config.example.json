@@ -1,0 +1,11 @@
+{
+  "shared_secret": "CHANGE-ME-long-random-string",
+  "apns_key_path": "/home/pi/influxontv-push/AuthKey_XXXXXXXXXX.p8",
+  "apns_key_id": "XXXXXXXXXX",
+  "apns_team_id": "9U36S4Q77X",
+  "topic": "com.mfcorp.InfluxOnTV",
+  "listen_host": "0.0.0.0",
+  "listen_port": 8787,
+  "state_path": "/home/pi/influxontv-push/state.json",
+  "notify_ok": true
+}
